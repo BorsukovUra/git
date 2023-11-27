@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор стоимости ремонта</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>Калькулятор стоимости ремонта</h1>
+  <div class="form">
+    <label for="roomSize">Размер помещения (в квадратных метрах):</label>
+    <input type="number" id="roomSize" placeholder="Введите размер помещения">
+    <label for="repairType">Тип ремонта:</label>
+<select id="repairType">
+  <option value="">Выберите тип ремонта</option>
+  <option value="standard">Стандартный</option>
+  <option value="premium">Премиум</option>
+</select>
+
+<label for="workType">Вид работы:</label>
+<select id="workType">
+  <option value="">Выберите вид работы</option>
+  <option value="painting">Покраска стен</option>
+  <option value="flooring">Укладка пола</option>
+  <option value="plumbing">Сантехнические работы</option>
+  <option value="electrical">Электрические работы</option>
+</select>
+
+<button onclick="calculateCost()">Рассчитать стоимость</button>
+<button onclick="clearForm()">Очистить</button>
+
+<p id="error"></p>
+<p id="result"></p>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
